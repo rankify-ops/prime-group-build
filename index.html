@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prime Group Build | Melbourne's Trusted Building & Construction Company</title>
-<meta name="description" content="Prime Group Build delivers quality residential and commercial building, renovations, and construction services across Melbourne. Licensed, insured, and trusted.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Group Building | Built on Reliability &amp; Driven by Quality</title>
+<meta name="description" content="Melbourne's trusted registered builder with 15+ years experience. Granny flats, renovations, commercial fit-outs, NDIS modifications &amp; 24/7 emergency response. VIC based, QLD coming soon.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-in">
-    <a href="/" class="logo">
-      <span style="font-size:1.4rem;font-weight:800;color:#fff;letter-spacing:-0.03em">PRIME<span style="color:var(--accent)">GROUP</span></span>
-    </a>
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Prime Group Building" class="logo-light"><img src="images/logo.png" alt="Prime Group Building" class="logo-dark"></a>
     <ul class="nav-l">
-      <li><a href="/">Home</a></li>
-      <li>
-        <a href="services.html">Services <span class="chev">&#9660;</span></a>
+      <li class="has-dd"><a href="services.html">Services <span class="chev">&#9662;</span></a>
         <div class="dropdown">
-          <a href="services.html#new-builds">New Builds</a>
+          <a href="services.html" class="dd-feat">All Services</a>
+          <div class="dd-sep"></div>
+          <a href="services.html#granny-flats">Granny Flats &amp; Tiny Homes</a>
           <a href="services.html#renovations">Renovations</a>
-          <a href="services.html#extensions">Extensions</a>
-          <a href="services.html#commercial">Commercial</a>
+          <a href="services.html#commercial">Commercial Fit-Outs</a>
+          <a href="services.html#ndis">NDIS Modifications</a>
+          <a href="services.html#emergency">24/7 Emergency</a>
+          <a href="services.html#labour">Project Management</a>
         </div>
       </li>
       <li><a href="projects.html">Projects</a></li>
@@ -34,277 +32,207 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="nav-r">
-      <a href="tel:0400000000" class="nav-ph">0400 000 000</a>
-      <a href="contact.html" class="nav-cta">Get a Quote</a>
+      <a href="tel:0404972047" class="nav-ph">&#128222; 0404 972 047</a>
+      <a href="contact.html#quote-form" class="nav-cta">Free Quote</a>
     </div>
     <button class="mob-tog" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- MOBILE DRAWER -->
-<div class="mdrawer">
-  <a href="/">Home</a>
-  <div class="mdrawer-group-title">Services <span class="mchev">&#9660;</span></div>
-  <div class="mdrawer-group-items">
-    <a href="services.html#new-builds">New Builds</a>
-    <a href="services.html#renovations">Renovations</a>
-    <a href="services.html#extensions">Extensions</a>
-    <a href="services.html#commercial">Commercial</a>
+<aside class="mdrawer" id="mdrawer"><button class="mdrawer-close" type="button" aria-label="Close menu">&times;</button>
+  <ul class="mdrawer-list">
+    <li><a href="index.html">Home</a></li>
+    <li class="mdd">
+      <button class="mdd-tog" type="button">Services <span class="mdd-chev">&#9662;</span></button>
+      <ul class="mdd-sub">
+        <li><a href="services.html" class="dd-feat-mob">All Services</a></li>
+        <li><a href="services.html#granny-flats">Granny Flats &amp; Tiny Homes</a></li>
+        <li><a href="services.html#renovations">Renovations</a></li>
+        <li><a href="services.html#commercial">Commercial Fit-Outs</a></li>
+        <li><a href="services.html#ndis">NDIS Modifications</a></li>
+        <li><a href="services.html#emergency">24/7 Emergency</a></li>
+        <li><a href="services.html#labour">Project Management</a></li>
+      </ul>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="mdrawer-cta">
+    <a href="tel:0404972047" class="mc-call">&#128222; 0404 972 047</a>
+    <a href="contact.html#quote-form" class="mc-quote">Get a Free Quote &rarr;</a>
   </div>
-  <a href="projects.html">Projects</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="mdrawer-cta">Get a Quote</a>
-  <a href="tel:0400000000" class="mdrawer-ph">0400 000 000</a>
-</div>
+</aside>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-bg">
-    <img src="images/hero.jpg" alt="Prime Group Build construction project">
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="ctr">
-    <div class="hero-content">
-      <div class="hero-badge">&#9733; Melbourne's Trusted Builders</div>
-      <h1>Building <span>Quality</span> Homes &amp; Spaces Across Melbourne</h1>
-      <p>From new builds and renovations to commercial fit-outs, Prime Group Build delivers exceptional craftsmanship backed by years of experience and a commitment to getting it right.</p>
-      <div class="hero-btns">
-        <a href="contact.html" class="btn btn-accent">Get a Free Quote &rarr;</a>
-        <a href="projects.html" class="btn btn-outline">View Our Work</a>
+  <div class="hero-bg"><img src="images/projects/blackburn-commercial-1.jpg" alt="Prime Group Building construction project"></div>
+  <div class="hero-inner">
+    <div class="ctr">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span>Now taking bookings across Victoria</div>
+        <h1>Built on <span class="em">Reliability</span><br>Driven by Quality</h1>
+        <p class="hero-sub">Registered building company with 15+ years of hands-on experience delivering quality construction and renovation solutions across Victoria. Residential, commercial, and NDIS &mdash; we do it all.</p>
+        <div class="hero-btns">
+          <a href="contact.html#quote-form" class="btn-p">Get a Free Quote &rarr;</a>
+          <a href="tel:0404972047" class="btn-glass">&#128222; 0404 972 047</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="hero-glass"><div class="hg-icon"><svg viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><div class="hg-val">15+</div><div class="hg-label">Years experience</div></div></div>
+        <div class="hero-glass"><div class="hg-icon"><svg viewBox="0 0 24 24"><path d="M12 2 15 9l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-7Z"/></svg></div><div><div class="hg-val">5.0</div><div class="hg-label">Google reviews</div></div></div>
+        <div class="hero-glass"><div class="hg-icon"><svg viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div><div><div class="hg-val">Registered</div><div class="hg-label">Builder &amp; NDIS</div></div></div>
+        <div class="hero-glass"><div class="hg-icon"><svg viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><div class="hg-val">24/7</div><div class="hg-label">Emergency response</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<section class="trust">
+<section class="benefits">
   <div class="ctr">
-    <div class="trust-in">
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Fully Licensed &amp; Insured
-      </div>
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-        5-Star Google Reviews
-      </div>
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        10+ Years Experience
-      </div>
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-        Registered Builder
-      </div>
+    <div class="benefits-grid">
+      <div class="ben-item"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>Registered Builder</h4><p>Fully licensed, insured, and compliant with all Victorian building regulations</p></div>
+      <div class="ben-item"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M3 10 12 3l9 7M5 10v10h14V10M9 20v-6h6v6M3 22h18"/></svg></div><h4>NDIS Registered</h4><p>Proudly supporting NDIS participants with quality home modifications</p></div>
+      <div class="ben-item"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>15+ Years Experience</h4><p>Decades of hands-on building expertise across residential and commercial</p></div>
+      <div class="ben-item"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div><h4>24/7 Emergency</h4><p>Urgent call-outs and critical maintenance when you need us most</p></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="sec">
+<section class="sec" id="services">
   <div class="ctr">
-    <div class="sec-header">
-      <span class="sec-label">What We Do</span>
-      <h2>Building Services You Can Trust</h2>
-      <p>Whether you're planning a new home, a renovation, or a commercial project, we bring the expertise and attention to detail your project deserves.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card fade-up">
-        <div class="svc-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"/></svg>
-        </div>
-        <h3>New Home Builds</h3>
-        <p>Custom-designed homes built to your vision and budget. From initial plans through to handover, we manage every detail of your new build.</p>
-        <a href="services.html#new-builds" class="svc-card-link">Learn more &rarr;</a>
-      </div>
-      <div class="svc-card fade-up">
-        <div class="svc-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.59-5.59a2.002 2.002 0 010-2.83l5.59-5.59a2.002 2.002 0 012.83 0l5.59 5.59a2.002 2.002 0 010 2.83l-5.59 5.59a2.002 2.002 0 01-2.83 0zM4.5 21h15"/></svg>
-        </div>
-        <h3>Renovations</h3>
-        <p>Transform your existing space with expert renovations. Kitchens, bathrooms, living areas — we breathe new life into your home.</p>
-        <a href="services.html#renovations" class="svc-card-link">Learn more &rarr;</a>
-      </div>
-      <div class="svc-card fade-up">
-        <div class="svc-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
-        </div>
-        <h3>Extensions</h3>
-        <p>Need more space? We design and build extensions that seamlessly blend with your existing home while adding real value.</p>
-        <a href="services.html#extensions" class="svc-card-link">Learn more &rarr;</a>
-      </div>
-      <div class="svc-card fade-up">
-        <div class="svc-card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
-        </div>
-        <h3>Commercial Fit-Outs</h3>
-        <p>Professional commercial building and fit-out services. Offices, retail spaces, and more — delivered on time and on budget.</p>
-        <a href="services.html#commercial" class="svc-card-link">Learn more &rarr;</a>
-      </div>
+    <div class="sec-tag fade">Our Services</div>
+    <h2 class="sec-t fade">Everything from granny flats to full commercial fit-outs</h2>
+    <p class="sec-sub fade">Whether you're adding a granny flat, renovating your home, upgrading your business, or need NDIS-compliant modifications &mdash; we bring the same commitment to every job.</p>
+    <div class="fg">
+      <a href="services.html#granny-flats" class="fg-card fade">
+        <div class="fg-ico"><svg viewBox="0 0 24 24"><path d="M3 10 12 3l9 7M5 10v10h14V10M9 20v-6h6v6M3 22h18"/></svg></div>
+        <h4>Granny Flats &amp; Tiny Homes</h4>
+        <p>Custom-built granny flats and tiny homes to add value and space to your property.</p>
+        <span class="fg-link">Learn more &rarr;</span>
+      </a>
+      <a href="services.html#renovations" class="fg-card fade">
+        <div class="fg-ico"><svg viewBox="0 0 24 24"><path d="M11.42 15.17l-5.59-5.59a2.002 2.002 0 010-2.83l5.59-5.59a2.002 2.002 0 012.83 0l5.59 5.59a2.002 2.002 0 010 2.83l-5.59 5.59a2.002 2.002 0 01-2.83 0zM4.5 21h15"/></svg></div>
+        <h4>Renovations</h4>
+        <p>Kitchens, bathrooms, living spaces &mdash; transform your home with expert renovations.</p>
+        <span class="fg-link">Learn more &rarr;</span>
+      </a>
+      <a href="services.html#commercial" class="fg-card fade">
+        <div class="fg-ico"><svg viewBox="0 0 24 24"><path d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg></div>
+        <h4>Commercial Fit-Outs</h4>
+        <p>Office fit-outs, shopfront upgrades, and business premises transformations.</p>
+        <span class="fg-link">Learn more &rarr;</span>
+      </a>
+      <a href="services.html#ndis" class="fg-card fade">
+        <div class="fg-ico"><svg viewBox="0 0 24 24"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg></div>
+        <h4>NDIS Modifications</h4>
+        <p>Quality home modifications for NDIS participants &mdash; compliant, accessible, and built with care.</p>
+        <span class="fg-link">Learn more &rarr;</span>
+      </a>
+      <a href="services.html#emergency" class="fg-card fade">
+        <div class="fg-ico"><svg viewBox="0 0 24 24"><path d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg></div>
+        <h4>24/7 Emergency Response</h4>
+        <p>Emergency call-outs and critical maintenance support available around the clock.</p>
+        <span class="fg-link">Learn more &rarr;</span>
+      </a>
+      <a href="services.html#labour" class="fg-card fade">
+        <div class="fg-ico"><svg viewBox="0 0 24 24"><path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg></div>
+        <h4>Project Management &amp; Labour Hire</h4>
+        <p>Experienced teams available for project management and labour hire solutions.</p>
+        <span class="fg-link">Learn more &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="why-sec">
+<section class="sec why-sec" id="why">
   <div class="ctr">
-    <div class="sec-header">
-      <span class="sec-label">Why Choose Us</span>
-      <h2>The Prime Group Build Difference</h2>
-      <p>We're not just builders — we're partners in bringing your vision to life.</p>
-    </div>
-    <div class="why-grid">
-      <div class="wcard fade-up">
-        <div class="wcard-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-        </div>
-        <h3>Quality Craftsmanship</h3>
-        <p>We take pride in every detail, using premium materials and proven techniques to deliver builds that stand the test of time.</p>
-      </div>
-      <div class="wcard fade-up">
-        <div class="wcard-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
-        </div>
-        <h3>Clear Communication</h3>
-        <p>No surprises or hidden costs. We keep you informed at every stage with transparent pricing and regular progress updates.</p>
-      </div>
-      <div class="wcard fade-up">
-        <div class="wcard-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-        <h3>On-Time Delivery</h3>
-        <p>We respect your time and your investment. Our projects are planned meticulously and delivered within the agreed timeframe.</p>
-      </div>
-      <div class="wcard fade-up">
-        <div class="wcard-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-        </div>
-        <h3>Fully Guaranteed</h3>
-        <p>All our work is backed by comprehensive warranties and full insurance coverage for your complete peace of mind.</p>
-      </div>
+    <div class="sec-tag fade">Why Choose Us</div>
+    <h2 class="sec-t fade">The Prime Group difference</h2>
+    <p class="sec-sub fade">We're not just builders &mdash; we're partners in bringing your vision to life, with the reliability and quality you deserve.</p>
+    <div class="why-g">
+      <div class="wcard fade"><div class="wico"><svg viewBox="0 0 24 24"><path d="M12 2 15 9l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-7Z"/></svg></div><div><h4>5-Star Reviewed</h4><p>Trusted by homeowners and businesses across Melbourne with consistently top-rated reviews.</p></div></div>
+      <div class="wcard fade"><div class="wico"><svg viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg></div><div><h4>Quality Craftsmanship</h4><p>We take pride in every detail, using premium materials and proven techniques on every project.</p></div></div>
+      <div class="wcard fade"><div class="wico"><svg viewBox="0 0 24 24"><path d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg></div><div><h4>Clear Communication</h4><p>No surprises or hidden costs. Transparent pricing, regular updates, and honest advice from day one.</p></div></div>
+      <div class="wcard fade"><div class="wico"><svg viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><h4>On-Time, On-Budget</h4><p>We respect your time and investment. Projects planned meticulously and delivered as promised.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS PREVIEW -->
-<section class="sec">
+<section class="sec" id="projects">
   <div class="ctr">
-    <div class="sec-header">
-      <span class="sec-label">Our Work</span>
-      <h2>Recent Projects</h2>
-      <p>Take a look at some of our recently completed builds across Melbourne.</p>
-    </div>
+    <div class="sec-tag fade">Our Work</div>
+    <h2 class="sec-t fade">Recent projects across Melbourne</h2>
+    <p class="sec-sub fade">From backyard granny flats to full commercial office fit-outs &mdash; take a look at what we've been building.</p>
     <div class="proj-grid">
-      <div class="proj-card fade-up">
-        <img src="images/project-1.jpg" alt="Modern home build in Melbourne">
-        <div class="proj-card-overlay">
-          <h3>Modern Family Home</h3>
-          <p>New Build — Melbourne</p>
-        </div>
-      </div>
-      <div class="proj-card fade-up">
-        <img src="images/project-2.jpg" alt="Kitchen renovation">
-        <div class="proj-card-overlay">
-          <h3>Full Kitchen Renovation</h3>
-          <p>Renovation — Geelong</p>
-        </div>
-      </div>
-      <div class="proj-card fade-up">
-        <img src="images/project-3.jpg" alt="Commercial office fit-out">
-        <div class="proj-card-overlay">
-          <h3>Office Fit-Out</h3>
-          <p>Commercial — CBD</p>
-        </div>
-      </div>
+      <div class="proj-card fade"><img src="images/projects/donvale-granny-flat-1.png" alt="Donvale granny flat project"><div class="proj-card-overlay"><h3>Granny Flat</h3><p>Donvale, VIC</p></div></div>
+      <div class="proj-card fade"><img src="images/projects/brunswick-bathroom-1.png" alt="Brunswick bathroom renovation"><div class="proj-card-overlay"><h3>Bathroom Renovation</h3><p>Brunswick, VIC</p></div></div>
+      <div class="proj-card fade"><img src="images/projects/blackburn-commercial-3.png" alt="Blackburn commercial office fit-out"><div class="proj-card-overlay"><h3>Commercial Office Fit-Out</h3><p>Blackburn, VIC</p></div></div>
+      <div class="proj-card fade"><img src="images/projects/diamond-creek-1.png" alt="Diamond Creek backyard project"><div class="proj-card-overlay"><h3>Backyard Transformation</h3><p>Diamond Creek, VIC</p></div></div>
+      <div class="proj-card fade"><img src="images/projects/balwyn-bathroom-1.png" alt="Balwyn bathroom renovation"><div class="proj-card-overlay"><h3>Bathroom Renovation</h3><p>Balwyn, VIC</p></div></div>
+      <div class="proj-card fade"><img src="images/projects/blackburn-commercial-4.png" alt="Blackburn commercial fit-out"><div class="proj-card-overlay"><h3>Office Transformation</h3><p>Blackburn, VIC</p></div></div>
     </div>
-    <div style="text-align:center;margin-top:36px">
-      <a href="projects.html" class="btn btn-dark">View All Projects &rarr;</a>
+    <div style="text-align:center;margin-top:40px" class="fade">
+      <a href="projects.html" class="btn-dark">View All Projects &rarr;</a>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="why-sec">
+<section class="sec" id="process">
   <div class="ctr">
-    <div class="sec-header">
-      <span class="sec-label">Testimonials</span>
-      <h2>What Our Clients Say</h2>
+    <div class="sec-c">
+      <div class="sec-tag fade">How It Works</div>
+      <h2 class="sec-t fade">From enquiry to completion</h2>
+      <p class="sec-sub fade">We keep it simple and transparent at every step.</p>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card fade-up">
-        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <blockquote>"Prime Group Build exceeded our expectations on our new home. Professional from start to finish, and the quality of work is outstanding."</blockquote>
-        <cite>James &amp; Sarah M.</cite>
-        <div class="testi-loc">Melbourne</div>
-      </div>
-      <div class="testi-card fade-up">
-        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <blockquote>"We had our kitchen and bathroom completely renovated. The team was punctual, tidy, and the result is absolutely stunning."</blockquote>
-        <cite>David L.</cite>
-        <div class="testi-loc">Geelong</div>
-      </div>
-      <div class="testi-card fade-up">
-        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <blockquote>"Used Prime Group Build for our office fit-out. They delivered on time and on budget. Highly recommend for commercial projects."</blockquote>
-        <cite>Amanda R.</cite>
-        <div class="testi-loc">Melbourne CBD</div>
-      </div>
+    <div class="proc">
+      <div class="pstep fade"><div class="pnum">1</div><h4>Get In Touch</h4><p>Call, email, or fill out our quick form. Tell us about your project and we'll get back to you fast.</p></div>
+      <div class="pstep fade"><div class="pnum">2</div><h4>Free Consultation</h4><p>We visit your property, discuss your vision, and provide a detailed, no-obligation quote.</p></div>
+      <div class="pstep fade"><div class="pnum">3</div><h4>Build Phase</h4><p>Our experienced team gets to work. Regular updates and clear communication throughout.</p></div>
+      <div class="pstep fade"><div class="pnum">4</div><h4>Handover</h4><p>Final walkthrough, quality check, and handover. We don't leave until you're completely happy.</p></div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="sec" id="areas">
   <div class="ctr">
-    <div class="cta-inner">
-      <h2>Ready to Start Your Project?</h2>
-      <p>Get in touch today for a free, no-obligation quote. Let's build something great together.</p>
-      <a href="contact.html" class="btn btn-accent">Get Your Free Quote &rarr;</a>
+    <div class="sec-tag fade">Service Areas</div>
+    <h2 class="sec-t fade">Serving all of Greater Melbourne &amp; Victoria</h2>
+    <p class="sec-sub fade">VIC based with QLD coming soon. We cover metro Melbourne and surrounding regions.</p>
+    <div class="atags fade">
+      <span class="atag">Melbourne CBD</span><span class="atag">Blackburn</span><span class="atag">Balwyn</span><span class="atag">Brunswick</span><span class="atag">Donvale</span><span class="atag">Diamond Creek</span><span class="atag">Geelong</span><span class="atag">Frankston</span><span class="atag">Dandenong</span><span class="atag">Box Hill</span><span class="atag">Ringwood</span><span class="atag">Hawthorn</span><span class="atag">Camberwell</span><span class="atag">Kew</span><span class="atag">Glen Waverley</span><span class="atag">Doncaster</span><span class="atag">Heidelberg</span><span class="atag">Eltham</span><span class="atag">Greensborough</span><span class="atag">South Yarra</span><span class="atag">St Kilda</span><span class="atag">Footscray</span><span class="atag">Werribee</span><span class="atag">Melton</span>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
+<section class="cta-strip">
   <div class="ctr">
-    <div class="ft-top">
-      <div class="ft-brand">
-        <span style="font-size:1.3rem;font-weight:800;color:#fff;letter-spacing:-0.03em">PRIME<span style="color:var(--accent)">GROUP</span></span>
-        <p>Melbourne's trusted building and construction company. Quality builds, honest service, and outstanding results on every project.</p>
-      </div>
-      <div class="ft-col">
-        <h4>Services</h4>
-        <a href="services.html#new-builds">New Builds</a>
-        <a href="services.html#renovations">Renovations</a>
-        <a href="services.html#extensions">Extensions</a>
-        <a href="services.html#commercial">Commercial</a>
-      </div>
-      <div class="ft-col">
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="ft-col">
-        <h4>Contact</h4>
-        <a href="tel:0400000000">0400 000 000</a>
-        <a href="mailto:info@primegroupbuild.com.au">info@primegroupbuild.com.au</a>
-        <a>Melbourne, VIC</a>
-      </div>
+    <h2 class="fade">Ready to start your project?</h2>
+    <p class="fade">Get in touch today for a free, no-obligation quote. Let's build something great together.</p>
+    <div class="cta-strip-btns fade">
+      <a href="contact.html#quote-form" class="btn-p">Get Your Free Quote &rarr;</a>
+      <a href="tel:0404972047" class="btn-glass">&#128222; 0404 972 047</a>
     </div>
-    <div class="ft-bottom">
-      <span>&copy; 2025 Prime Group Build. All rights reserved.</span>
-      <span><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a></span>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="ctr">
+    <div class="foot-g">
+      <div class="foot-brand"><a href="index.html" class="logo"><img src="images/logo.png" alt="Prime Group Building" class="logo-light"><img src="images/logo.png" alt="Prime Group Building" class="logo-dark"></a><p>Melbourne's trusted registered builder. 15+ years experience delivering quality residential and commercial construction across Victoria.</p></div>
+      <div><h4>Services</h4><ul class="foot-l"><li><a href="services.html#granny-flats">Granny Flats</a></li><li><a href="services.html#renovations">Renovations</a></li><li><a href="services.html#commercial">Commercial</a></li><li><a href="services.html#ndis">NDIS Modifications</a></li><li><a href="services.html#emergency">24/7 Emergency</a></li><li><a href="services.html#labour">Labour Hire</a></li></ul></div>
+      <div><h4>Company</h4><ul class="foot-l"><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul class="foot-l"><li><a href="tel:0404972047">0404 972 047</a></li><li><a href="mailto:admin@primegroupbuild.com">admin@primegroupbuild.com</a></li><li><a>Melbourne, VIC</a></li></ul></div>
     </div>
+    <div class="foot-b"><span>&copy; 2025 Prime Group Building. All rights reserved.</span><span>Website by <a href="https://rankify.com.au">Rankify</a></span></div>
   </div>
 </footer>
 
-<!-- STICKY MOBILE CTA -->
-<div class="sticky">
-  <a href="tel:0400000000" class="sticky-ph">0400 000 000</a>
-  <a href="contact.html" class="sticky-btn">Get a Quote</a>
-</div>
+<div class="sticky"><a href="tel:0404972047" class="sc">&#128222; Call</a><a href="contact.html#quote-form" class="sq">Free Quote</a></div>
+
+<a href="tel:0404972047" class="float-call" aria-label="Call Prime Group Build">
+  <div class="pulse-ring"></div>
+  <svg viewBox="0 0 24 24"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+</a>
 
 <script src="assets/site.js"></script>
 </body>
