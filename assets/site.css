@@ -27,9 +27,8 @@ img{max-width:100%;display:block}
 .nav.scrolled{background:rgba(255,255,255,.7);backdrop-filter:blur(24px) saturate(1.8);-webkit-backdrop-filter:blur(24px) saturate(1.8);border-bottom:1px solid rgba(0,0,0,.06);padding:10px 0;box-shadow:0 4px 24px rgba(0,0,0,.06)}
 .nav-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{display:flex;align-items:center;gap:8px;position:relative}
-.logo img{height:64px;width:auto;display:block;transition:all .3s;mix-blend-mode:screen}
-.nav.scrolled .logo img{filter:invert(1);mix-blend-mode:multiply}
-.logo .logo-dark{display:none}
+.logo img{height:64px;width:auto;display:block;transition:all .3s}
+.nav.scrolled .logo img{filter:invert(1)}
 .nav-l{display:flex;align-items:center;gap:28px;list-style:none}
 .nav-l>li{position:relative}
 .nav-l>li>a{font-size:.87rem;font-weight:600;color:rgba(255,255,255,.92);transition:color .2s;display:inline-flex;align-items:center;gap:5px;padding:8px 0}
@@ -90,7 +89,7 @@ body.light-hero .mob-tog span{background:var(--g700)}
 /* HERO */
 .hero{padding:0;position:relative;overflow:hidden;display:flex;align-items:center}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 65%}
 .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(9,9,11,.82) 0%,rgba(9,9,11,.6) 35%,rgba(9,9,11,.25) 65%,rgba(0,0,0,.08) 100%)}
 .hero-inner{position:relative;z-index:2;padding:140px 0 80px;width:100%}
 .hero-content{max-width:620px}
@@ -310,7 +309,7 @@ textarea.finp{resize:vertical;min-height:90px}
 .foot{background:var(--g950);color:var(--g400);padding:56px 0 24px;border-top:none}
 .foot-g{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
 .foot-brand .logo{margin-bottom:10px}
-.foot-brand .logo img{height:48px;filter:none;mix-blend-mode:screen}
+.foot-brand .logo img{height:48px;filter:none}
 .foot-brand p{font-size:.84rem;line-height:1.6;max-width:270px;color:var(--g400)}
 .foot h4{font-size:.78rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px}
 .foot-l{list-style:none;display:flex;flex-direction:column;gap:9px}
