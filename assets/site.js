@@ -132,7 +132,7 @@
       });
 
       var ctx = qform.dataset.context || 'Quote Request';
-      var to = qform.dataset.to || 'admin@primegroupbuild.com';
+      var to = qform.dataset.to || 'rankify.aus@gmail.com';
       var subject = 'Website enquiry — ' + ctx;
 
       var userEmail = '';
