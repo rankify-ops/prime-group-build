@@ -338,8 +338,8 @@ textarea.finp{resize:vertical;min-height:90px}
   .content-g,.form-g{grid-template-columns:1fr;gap:32px}
   .content-g.rev{direction:ltr}
   .hero-inner{padding:120px 0 70px}
-  .hero-cards{flex-wrap:wrap}
-  .hero-glass{flex:1 1 calc(50% - 5px);min-width:calc(50% - 5px)}
+  .hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero-glass{flex:none}
   .benefits{margin-top:-32px}
   .benefits-grid{grid-template-columns:1fr 1fr}
   .ben-item{border-bottom:1px solid var(--g100)}
@@ -360,5 +360,5 @@ textarea.finp{resize:vertical;min-height:90px}
 @media(max-width:480px){
   .foot-g{grid-template-columns:1fr}
   .proc{grid-template-columns:1fr}
-  .hero-cards{flex-direction:column}
+  .hero-cards{grid-template-columns:1fr 1fr}
 }
