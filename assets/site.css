@@ -363,7 +363,8 @@ textarea.finp{resize:vertical;min-height:90px}
   .sec{padding:72px 0}
   .form-img{display:none}
   .qform-head{display:block}
-  .hero-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero-content{max-width:none}
+  .hero-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .hero-btns .btn-p,.hero-btns .btn-glass{padding:12px 10px;font-size:.82rem;justify-content:center}
   .hero-bg img{object-position:51% 70%}
   .phero{padding:130px 0 64px}
