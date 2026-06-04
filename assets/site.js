@@ -208,4 +208,34 @@
       b.addEventListener('click', function(){ if(cs<=1) return; cs--; upd(); });
     });
   });
+
+  // Lightbox for project images
+  var projCards = document.querySelectorAll('.proj-card');
+  if(projCards.length){
+    var lb = document.createElement('div');
+    lb.className = 'lightbox';
+    lb.innerHTML = '<button class="lightbox-close" aria-label="Close">&times;</button><img src="" alt=""><div class="lightbox-caption"></div>';
+    document.body.appendChild(lb);
+    var lbImg = lb.querySelector('img');
+    var lbCap = lb.querySelector('.lightbox-caption');
+    var closeLb = function(){ lb.classList.remove('open'); document.body.style.overflow = ''; };
+    lb.querySelector('.lightbox-close').addEventListener('click', closeLb);
+    lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLb(); });
+    projCards.forEach(function(card){
+      card.style.cursor = 'zoom-in';
+      card.addEventListener('click', function(){
+        var img = card.querySelector('img');
+        var title = card.querySelector('h3');
+        var loc = card.querySelector('p');
+        if(img){
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lbCap.textContent = (title ? title.textContent : '') + (loc ? ' — ' + loc.textContent : '');
+          lb.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+  }
 })();
