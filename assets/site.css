@@ -112,7 +112,7 @@ body.light-hero .mob-tog span{background:var(--g700)}
 .hero-glass .hg-icon{font-size:1.3rem;display:flex;align-items:center;justify-content:center;color:#fff;width:28px;height:28px;flex-shrink:0}
 .hero-glass .hg-icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
 .hero-glass .hg-val{font-size:1.15rem;font-weight:800;color:#fff;line-height:1}
-.hero-glass .hg-label{font-size:.65rem;color:rgba(255,255,255,.6);font-weight:500}
+.hero-glass .hg-label{font-size:.65rem;color:rgba(255,255,255,.6);font-weight:500;white-space:nowrap}
 
 /* PAGE HERO (sub-pages) */
 .phero{position:relative;overflow:hidden;padding:160px 0 80px;background:linear-gradient(135deg,var(--g950) 0%,var(--g800) 100%)}
@@ -348,7 +348,7 @@ textarea.finp{resize:vertical;min-height:90px}
   .content-g,.form-g{grid-template-columns:1fr;gap:32px}
   .content-g.rev{direction:ltr}
   .hero-inner{padding:120px 0 70px}
-  .hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;grid-auto-rows:1fr}
   .hero-glass{flex:none}
   .benefits{margin-top:-32px}
   .benefits-grid{grid-template-columns:1fr 1fr}
