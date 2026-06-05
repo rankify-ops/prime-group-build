@@ -148,10 +148,10 @@
       var autoResponse =
         'Hi ' + firstName + ',\n\n' +
         'Thanks for your enquiry about ' + ctx + ' — we\'ve received it and will be in touch shortly.\n\n' +
-        'Need urgent help? Call us on 0404 972 047.\n\n' +
+        'Need urgent help? Call us on 0468 866 046.\n\n' +
         'Cheers,\n' +
         'The Prime Group Build Team\n' +
-        '0404 972 047 | admin@primegroupbuild.com';
+        '0468 866 046 | admin@primegroupbuild.com';
 
       var payload = {
         _subject: subject,
@@ -182,13 +182,13 @@
         if(res.ok && res.j && (res.j.success === true || res.j.success === 'true' || /success/i.test(res.j.message||''))){
           cb(true);
         } else {
-          showError('Sorry, we couldn\'t send that automatically. Please call <a href="tel:0404972047" style="color:#dc2626;font-weight:700">0404 972 047</a> or email <a href="mailto:'+to+'" style="color:#dc2626;font-weight:700">'+to+'</a>.');
+          showError('Sorry, we couldn\'t send that automatically. Please call <a href="tel:0468866046" style="color:#dc2626;font-weight:700">0468 866 046</a> or email <a href="mailto:'+to+'" style="color:#dc2626;font-weight:700">'+to+'</a>.');
           cb(false);
         }
       })
       .catch(function(){
         if(btn){ btn.disabled = false; btn.textContent = origText; btn.style.opacity = ''; }
-        showError('Network issue. Please call <a href="tel:0404972047" style="color:#dc2626;font-weight:700">0404 972 047</a> or email <a href="mailto:'+to+'" style="color:#dc2626;font-weight:700">'+to+'</a>.');
+        showError('Network issue. Please call <a href="tel:0468866046" style="color:#dc2626;font-weight:700">0468 866 046</a> or email <a href="mailto:'+to+'" style="color:#dc2626;font-weight:700">'+to+'</a>.');
         cb(false);
       });
     };
