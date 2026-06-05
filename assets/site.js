@@ -132,7 +132,7 @@
       });
 
       var ctx = qform.dataset.context || 'Quote Request';
-      var to = qform.dataset.to || 'admin@primegroupbuild.com';
+      var to = qform.dataset.to || 'admin@primegroupbuild.com.au';
       var subject = 'Website enquiry — ' + ctx;
 
       var userEmail = '';
@@ -151,7 +151,7 @@
         'Need urgent help? Call us on 0468 866 046.\n\n' +
         'Cheers,\n' +
         'The Prime Group Build Team\n' +
-        '0468 866 046 | admin@primegroupbuild.com';
+        '0468 866 046 | admin@primegroupbuild.com.au';
 
       var payload = {
         _subject: subject,
