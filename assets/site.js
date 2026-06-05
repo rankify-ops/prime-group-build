@@ -210,7 +210,8 @@
   });
 
   // Lightbox for project images
-  var projCards = document.querySelectorAll('.proj-card');
+  // Only apply lightbox to proj-cards that are NOT links (div, not a)
+  var projCards = document.querySelectorAll('.proj-card:not(a)');
   if(projCards.length){
     var lb = document.createElement('div');
     lb.className = 'lightbox';
@@ -223,6 +224,7 @@
     lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
     document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLb(); });
     projCards.forEach(function(card){
+      if(card.tagName === 'A') return; // skip linked cards
       card.style.cursor = 'zoom-in';
       card.addEventListener('click', function(){
         var img = card.querySelector('img');
