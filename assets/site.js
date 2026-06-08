@@ -98,7 +98,16 @@
         var key = slide.dataset.field || ('Question ' + slide.dataset.s);
         fd[key] = b.dataset.v;
         setTimeout(function(){
-          if(cs < maxStep){ cs++; upd(); }
+          if(cs < maxStep){
+            cs++;
+            // Skip property type step for Commercial and Emergency
+            var skipProperty = (fd['Service Type'] === 'Commercial Fit-Out' || fd['Service Type'] === 'Emergency / Maintenance');
+            var nextSlide = qform.querySelector('.fslide[data-s="'+cs+'"]');
+            if(skipProperty && nextSlide && nextSlide.dataset.field === 'Property Type'){
+              cs++;
+            }
+            upd();
+          }
         }, 350);
       });
     });
@@ -201,11 +210,26 @@
         if(cs >= maxStep) return;
         var sel = qform.querySelector('.fslide[data-s="'+cs+'"] .ob.sel');
         if(cs < maxStep && !sel) return;
-        cs++; upd();
+        cs++;
+        var skipProperty = (fd['Service Type'] === 'Commercial Fit-Out' || fd['Service Type'] === 'Emergency / Maintenance');
+        var nextSlide = qform.querySelector('.fslide[data-s="'+cs+'"]');
+        if(skipProperty && nextSlide && nextSlide.dataset.field === 'Property Type'){
+          cs++;
+        }
+        upd();
       });
     });
     qform.querySelectorAll('.fb').forEach(function(b){
-      b.addEventListener('click', function(){ if(cs<=1) return; cs--; upd(); });
+      b.addEventListener('click', function(){
+        if(cs<=1) return;
+        cs--;
+        var skipProperty = (fd['Service Type'] === 'Commercial Fit-Out' || fd['Service Type'] === 'Emergency / Maintenance');
+        var prevSlide = qform.querySelector('.fslide[data-s="'+cs+'"]');
+        if(skipProperty && prevSlide && prevSlide.dataset.field === 'Property Type'){
+          cs--;
+        }
+        upd();
+      });
     });
   });
 
