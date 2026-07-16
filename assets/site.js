@@ -163,12 +163,11 @@
         '0468 866 046 | admin@primegroupbuild.com.au';
 
       var payload = {
-        _subject: subject,
-        _captcha: 'false',
-        _template: 'table',
-        _replyto: userEmail || '',
+        access_key: '4be6acce-6bd3-4ce0-837d-6cfd4708276e',
+        subject: subject,
+        from_name: 'Prime Group Building Website',
+        replyto: userEmail || '',
         email: userEmail || '',
-        _autoresponse: autoResponse,
         Service: ctx,
         Page: window.location.href
       };
@@ -178,9 +177,7 @@
       var origText = btn ? btn.textContent : '';
       if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; btn.style.opacity = '.7'; }
 
-      var endpoint = 'https://formsubmit.co/ajax/' + encodeURIComponent(to);
-
-      fetch(endpoint, {
+      fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(payload)
@@ -188,16 +185,16 @@
       .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ return { ok:r.ok, j:j }; }); })
       .then(function(res){
         if(btn){ btn.disabled = false; btn.textContent = origText; btn.style.opacity = ''; }
-        if(res.ok && res.j && (res.j.success === true || res.j.success === 'true' || /success/i.test(res.j.message||''))){
+        if(res.ok && res.j && res.j.success){
           cb(true);
         } else {
-          showError('Sorry, we couldn\'t send that automatically. Please call <a href="tel:0468866046" style="color:#dc2626;font-weight:700">0468 866 046</a> or email <a href="mailto:'+to+'" style="color:#dc2626;font-weight:700">'+to+'</a>.');
+          showError('Sorry, we couldn\'t send that automatically. Please call <a href="tel:0468866046" style="color:#dc2626;font-weight:700">0468 866 046</a> or email <a href="mailto:admin@primegroupbuild.com.au" style="color:#dc2626;font-weight:700">admin@primegroupbuild.com.au</a>.');
           cb(false);
         }
       })
       .catch(function(){
         if(btn){ btn.disabled = false; btn.textContent = origText; btn.style.opacity = ''; }
-        showError('Network issue. Please call <a href="tel:0468866046" style="color:#dc2626;font-weight:700">0468 866 046</a> or email <a href="mailto:'+to+'" style="color:#dc2626;font-weight:700">'+to+'</a>.');
+        showError('Network issue. Please call <a href="tel:0468866046" style="color:#dc2626;font-weight:700">0468 866 046</a> or email <a href="mailto:admin@primegroupbuild.com.au" style="color:#dc2626;font-weight:700">admin@primegroupbuild.com.au</a>.');
         cb(false);
       });
     };
