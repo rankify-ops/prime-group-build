@@ -112,11 +112,9 @@
       });
     });
     var showSuccess = function(){
-      cs = maxStep + 1;
-      slides.forEach(function(s){ s.classList.remove('active'); });
-      var done = qform.querySelector('.fslide[data-s="'+cs+'"]');
-      if(done) done.classList.add('active');
-      steps.forEach(function(s){ s.classList.remove('active'); s.classList.add('done'); });
+      var base = window.location.pathname.indexOf('/locations/') !== -1 ? '../' : '';
+      window.location.href = base + 'thank-you.html';
+      return;
     };
     var showError = function(msg){
       var errSlot = qform.querySelector('.qform-error');
