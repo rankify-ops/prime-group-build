@@ -112,8 +112,7 @@
       });
     });
     var showSuccess = function(){
-      var base = window.location.pathname.indexOf('/locations/') !== -1 ? '../' : '';
-      window.location.href = base + 'thank-you.html';
+      window.location.href = '/thank-you';
       return;
     };
     var showError = function(msg){
